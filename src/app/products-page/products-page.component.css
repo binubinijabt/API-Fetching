@@ -1,0 +1,13 @@
+.p-2{
+    font-weight: 500;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.p-2:hover{
+    box-shadow: 2px 2px 9px  white;
+}
+.p-1:hover{
+    box-shadow: 4px 4px 9px white;
+   
+}

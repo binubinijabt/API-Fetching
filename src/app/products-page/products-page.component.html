@@ -1,0 +1,66 @@
+<!-- <pre>{{getProducts|json}}</pre> -->
+<div class="container bg-dark"> 
+
+<div class="row">
+
+<div class="col-1"></div>
+<div class="col-10 m-2">
+    <h3 style="color: white;text-align: center;">WHY US</h3>
+
+       <h4 style="text-align: justify;color: white;"> CARTPRODUCTS is a form of electronic commerce which allows consumers to directly buy goods or services from a seller over the Internet using a web browser or a mobile app.</h4>
+</div>
+<div class="col-1"></div>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+    <div class="col-2"></div>
+
+    <div class="col-8" *ngFor=" let product of getProducts.products" >  
+     
+<div class="card m-2 p-1" style="background-color: rgb(220, 158, 158);">
+    <div class="card-body">
+
+        <div class="col-4"></div>
+        <div class="col-4">
+            
+<ul>
+    <li class="list-item p-2" >id:{{product.id}}</li>
+    <li class="list-item p-2 " >Name:{{product.title}}</li>
+    <li class="list-item p-2" >description:{{product.description}}</li>
+    <li class="list-item p-2" >price:{{product.price}}</li>
+    <li class="list-item p-2" >discountPercentage:{{product.discountPercentage}}</li>
+    <li class="list-item p-2" >ratings:{{product.ratings}}</li>
+    <li class="list-item p-2" >stock:{{product.stock}}</li>
+    <li class="list-item p-2" >brand:{{product.brand}}</li>  
+    <li class="list-item p-2" >category:{{product.category}}</li>
+    <li class="list-item p-2" ><img src="{{product.thumbnail}}" width="90%"></li>
+    <li class="list-item p-2" > <img src="{{product.images[0]}}" width="90%" >
+    </li>
+    <li> <img src="{{product.images[1]}}" alt=""></li>
+
+
+  
+</ul>
+        </div>
+        <br><br>
+        <div class="col-4"></div>
+
+    </div>
+</div>
+
+
+
+
+    </div>
+    <div class="col-2"></div>
+    
+</div>
+</div>
+
+<br><br>
